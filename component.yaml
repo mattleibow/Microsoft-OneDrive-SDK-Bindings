@@ -1,0 +1,21 @@
+version: 1.0.0
+name: Live SDK for Android
+id: livesdkandroid
+publisher: Live Services
+publisher-url: onedrive.com
+src-url: https://github.com/liveservices/LiveSDK-for-Android
+license: component/License.md
+icons: 
+  - component/icons/livesdkandroid_128x128.png
+  - component/icons/livesdkandroid_512x512.png
+monodoc: ./docs/
+summary: The Live SDK for Android library is intended to help developers to easily integrate OneDrive and Outlook.com contacts into their Android apps.
+details: component/Details.md
+getting-started: component/GettingStarted.md
+no_build: true
+libraries:
+  android: src/binding/LiveSDK.Android/LiveSDK.Android.dll
+samples:
+  - name: "Android Sample"
+    path: src/samples/LiveSDKSampleAndroid/LiveSDKSampleAndroid.sln
+    nobuild: true
