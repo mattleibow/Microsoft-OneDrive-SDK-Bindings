@@ -1,0 +1,14 @@
+﻿<metadata>
+	<!--
+  This sample removes the class: android.support.v4.content.AsyncTaskLoader.LoadTask:
+  <remove-node path="/api/package[@name='android.support.v4.content']/class[@name='AsyncTaskLoader.LoadTask']" />
+  
+  This sample removes the method: android.support.v4.content.CursorLoader.loadInBackground:
+  <remove-node path="/api/package[@name='android.support.v4.content']/class[@name='CursorLoader']/method[@name='loadInBackground']" />
+  -->
+
+  <attr path="/api/package[@name='com.microsoft.onedrivesdk']" name="managedName">Microsoft.OneDrive</attr>
+  <attr path="/api/package[@name='com.microsoft.onedrivesdk.picker']" name="managedName">Microsoft.OneDrive.Pickers</attr>
+  <attr path="/api/package[@name='com.microsoft.onedrivesdk.saver']" name="managedName">Microsoft.OneDrive.Savers</attr>
+
+</metadata>
