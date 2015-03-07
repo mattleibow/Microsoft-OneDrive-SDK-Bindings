@@ -26,11 +26,12 @@ using Android.Views;
 using Android.Widget;
 using Microsoft.Live;
 using Org.Json;
+using Android.Support.V7.App;
 
 namespace LiveSDKSampleAndroid
 {
-	[Activity]
-	public class ExplorerActivity : Activity
+	[Activity(Label = "Explorer", Icon = "@drawable/ic_launcher", Theme = "@style/Theme.AppCompat.Light.DarkActionBar")]
+	public class ExplorerActivity : ActionBarActivity
 	{
 		private static readonly string[] HttpMethods = {"GET", "DELETE", "PUT", "POST"};
 		private class HttpMethodIds

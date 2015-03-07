@@ -9,12 +9,8 @@
     <RootNamespace>Microsoft.Live</RootNamespace>
     <MonoAndroidResourcePrefix>Resources</MonoAndroidResourcePrefix>
     <MonoAndroidAssetsPrefix>Assets</MonoAndroidAssetsPrefix>
-    <AndroidUseLatestPlatformSdk>
-    </AndroidUseLatestPlatformSdk>
     <AssemblyName>LiveSDK.Android</AssemblyName>
-    <TargetFrameworkVersion>v2.2</TargetFrameworkVersion>
-    <ProductVersion>12.0.0</ProductVersion>
-    <SchemaVersion>2.0</SchemaVersion>
+    <TargetFrameworkVersion>v2.3</TargetFrameworkVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -59,9 +55,9 @@
       <SubType>Designer</SubType>
     </TransformFile>
   </ItemGroup>
-  <ItemGroup>
-    <EmbeddedJar Include="Jars\LiveSDK.jar" />
-  </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildExtensionsPath)\Novell\Xamarin.Android.Bindings.targets" />
+  <ItemGroup>
+    <LibraryProjectZip Include="Jars\LiveSDK.aar" />
+  </ItemGroup>
 </Project>

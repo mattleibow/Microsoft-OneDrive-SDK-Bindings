@@ -106,7 +106,7 @@ namespace LiveSDKSampleAndroid.SkyDrive
 					uploadProgressDialog.Dismiss();
 					ShowToast(ex.Message);
 				}
-				catch (OperationCanceledException)
+				catch (System.OperationCanceledException)
 				{
 					uploadProgressDialog.Dismiss();
 					ShowToast("Downloaded canceled.");
@@ -264,7 +264,7 @@ namespace LiveSDKSampleAndroid.SkyDrive
 								downloadProgressDialog.Dismiss();
 								ShowToast(ex.Message);
 							}
-							catch (OperationCanceledException)
+							catch (System.OperationCanceledException)
 							{
 								downloadProgressDialog.Dismiss();
 								ShowToast("Downloaded canceled.");

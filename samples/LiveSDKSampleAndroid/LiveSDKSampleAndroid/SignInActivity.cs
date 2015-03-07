@@ -29,11 +29,12 @@ using Android.Views;
 using Android.Widget;
 using Java.Util;
 using Microsoft.Live;
+using Android.Support.V7.App;
 
 namespace LiveSDKSampleAndroid
 {
-	[Activity(MainLauncher = true, ConfigurationChanges = ConfigChanges.Orientation)]
-	public class SignInActivity : Activity
+	[Activity(Label = "Sign In", Icon = "@drawable/ic_launcher", Theme = "@style/Theme.AppCompat.Light.DarkActionBar", MainLauncher = true, ConfigurationChanges = ConfigChanges.Orientation)]
+	public class SignInActivity : ActionBarActivity
 	{
 		private LiveAuthClient mAuthClient;
 		private ProgressDialog mInitializeDialog;

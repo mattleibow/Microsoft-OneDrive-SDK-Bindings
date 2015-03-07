@@ -8,8 +8,23 @@
   -->
 
   <attr path="/api/package[@name='com.microsoft.live']" name="managedName">Microsoft.Live</attr>
-  <remove-node path="/api/package[@name='com.microsoft.live']/class[@visibility='']" />
 
+  <remove-node path="/api/package[@name='com.microsoft.live']/class[@visibility='']" />
+  <remove-node path="/api/package[@name='com.microsoft.live']/interface[@name='ApiRequest.Observer']" />
+  <remove-node path="/api/package[@name='com.microsoft.live']/class[@name='ApiRequest.Redirects']" />
+  <remove-node path="/api/package[@name='com.microsoft.live']/class[@name='ApiRequest.ResponseCodes']" />
+  <remove-node path="/api/package[@name='com.microsoft.live']/interface[@name='ApiRequestAsync.Observer']" />
+  <remove-node path="/api/package[@name='com.microsoft.live']/interface[@name='ApiRequestAsync.ProgressObserver']" />
+  <remove-node path="/api/package[@name='com.microsoft.live']/interface[@name='EntityEnclosingApiRequest.UploadProgressListener']" />
+  <remove-node path="/api/package[@name='com.microsoft.live']/class[@name='OAuth.DisplayType']" />
+  <remove-node path="/api/package[@name='com.microsoft.live']/class[@name='OAuth.ErrorType']" />
+  <remove-node path="/api/package[@name='com.microsoft.live']/class[@name='OAuth.GrantType']" />
+  <remove-node path="/api/package[@name='com.microsoft.live']/class[@name='OAuth.ResponseType']" />
+  <remove-node path="/api/package[@name='com.microsoft.live']/class[@name='OAuth.TokenType']" />
+  <remove-node path="/api/package[@name='com.microsoft.live']/class[@name='OAuthErrorResponse.Builder']" />
+  <remove-node path="/api/package[@name='com.microsoft.live']/class[@name='OAuthSuccessfulResponse.Builder']" />
+  <remove-node path="/api/package[@name='com.microsoft.live']/class[@name='UriBuilder.QueryParameter']" />
+  
   <attr path="/api/package[@name='com.microsoft.live']/class[@name='LiveConnectSession']/method[@name='getScopes']" name="visibility">internal</attr>
   <attr path="/api/package[@name='com.microsoft.live']/class[@name='LiveConnectSession']/method[@name='getScopes']" name="managedName">GetScopesInternal</attr>
 

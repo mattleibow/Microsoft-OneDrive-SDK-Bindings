@@ -34,7 +34,7 @@ using LiveSDKSampleAndroid.SkyDrive;
 
 namespace LiveSDKSampleAndroid
 {
-	[Activity(Theme = "@android:style/Theme.NoTitleBar")]
+	[Activity(Label = "Main", Icon = "@drawable/ic_launcher", Theme = "@style/Theme.AppCompat.Light.DarkActionBar")]
 	public class MainActivity : TabActivity
 	{
 		private const int DialogLogoutId = 0;
