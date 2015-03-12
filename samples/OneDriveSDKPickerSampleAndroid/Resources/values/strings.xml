@@ -1,21 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">SaverSample</string>
-    <string name="main_welcomeText">OneDriveSDK Saver Sample</string>
-    <string name="main_startSaverButton">Save a File</string>
-    <string name="file_name_edit_text">MyFile.txt</string>
-    <string name="file_name_label">File Name:</string>
-    <string name="file_size_label">File Size (KB):</string>
-    <string name="file_size_edit_text">100</string>
-    <string name="file_name_hint">Name of the file to upload to OneDrive</string>
-    <string name="file_size_hint">Size of the file to upload to OneDrive in kilobytes</string>
-    <string name="error_message_none">None</string>
-    <string name="result_table_label">Saver Results</string>
-    <string name="overall_result_label">Result:</string>
-    <string name="overall_result_success">Success</string>
-    <string name="overall_result_failure">Failure</string>
-    <string name="error_type_label">Error Type:</string>
-    <string name="debug_error_label">Debug Error:</string>
+    <string name="app_name">OneDrive Picker</string>
+    <string name="main_welcomeText">OneDrive SDK Picker Sample</string>
+    <string name="main_radioWebViewLink">Web View Link</string>
+    <string name="main_radioDownloadLink">Download Link</string>
+    <string name="main_startPickerButton">Pick a File</string>
+    <string name="main_resultTableProperty">Property</string>
+    <string name="main_resultTableValue">Value</string>
+    <string name="main_resultTableName">Name:</string>
+    <string name="main_resultTableLinkType">LinkType:</string>
+    <string name="main_resultTableLink">Link:</string>
+    <string name="main_resultTableFileSize">File Size:</string>
+    <string name="main_resultTableThumbnails">Thumbnails:</string>
+    <string name="main_thumbnailTitle1">Thumbnail: Small</string>
+    <string name="main_thumbnailTitle2">Thumbnail: Medium</string>
+    <string name="main_thumbnailTitle3">Thumbnail: Large</string>
+    <string name="main_thumbnailDefaultUrl">https://www.onedrive.com</string>
+    <string name="main_thumbnailDescription">A thumbnail</string>
+    <string name="main_resultSaveAsLabel">Save Locally</string>
+    <string name="main_resultSaveAsButtonLabel">Save</string>
+    <color name="main_thumbnailBackgroundColor">#0043ae</color>
 
 </resources>

@@ -1,28 +1,28 @@
 MONOXBUILD=/Library/Frameworks/Mono.framework/Commands/xbuild
 VERSION=5.6
 
-all: Microsoft.Live.Android.dll OneDriveSDK.Android.dll
+all: OneDriveSDK.Android.dll # Microsoft.Live.Android.dll 
 
 
 LiveSDK.Android/Jars/LiveSDK.aar:
 	# check out
-	##git clone https://github.com/liveservices/LiveSDK-for-Android.git external/LiveSDK-for-Android
+	git clone https://github.com/liveservices/LiveSDK-for-Android.git external/LiveSDK-for-Android
 
 	# build
-	##(cd external/LiveSDK-for-Android && chmod +x gradlew && ./gradlew wrapper && ./gradlew build)
+	(cd external/LiveSDK-for-Android && chmod +x gradlew && ./gradlew wrapper && ./gradlew build)
 
 	# copy jar
-	##mkdir -p LiveSDK.Android/Jars/
-	##cp external/LiveSDK-for-Android/src/build/outputs/aar/src-release.aar LiveSDK.Android/Jars/LiveSDK.aar
+	mkdir -p LiveSDK.Android/Jars/
+	cp external/LiveSDK-for-Android/src/build/outputs/aar/src-release.aar LiveSDK.Android/Jars/LiveSDK.aar
 
 Microsoft.Live.Android.dll: LiveSDK.Android/Jars/LiveSDK.aar
-	##$(MONOXBUILD) /p:Configuration=Release LiveSDK.Android/LiveSDK.Android.csproj
-	##cp LiveSDK.Android/bin/Release/Microsoft.Live.Android.dll Microsoft.Live.Android.dll
+	$(MONOXBUILD) /p:Configuration=Release LiveSDK.Android/LiveSDK.Android.csproj
+	cp LiveSDK.Android/bin/Release/Microsoft.Live.Android.dll Microsoft.Live.Android.dll
 
 
 OneDriveSDK.Android/Jars/OneDriveSDK.aar:
 	# check out
-	##git clone https://github.com/OneDrive/onedrive-picker-android.git external/OneDrive-Picker-for-Android
+	###git clone https://github.com/OneDrive/onedrive-picker-android.git external/OneDrive-Picker-for-Android
 
 	# build
 	(cd external/OneDrive-Picker-for-Android && chmod +x gradlew && ./gradlew wrapper && ./gradlew build)

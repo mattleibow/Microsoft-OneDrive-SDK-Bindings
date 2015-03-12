@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">SaverSample</string>
-    <string name="main_welcomeText">OneDriveSDK Saver Sample</string>
+    <string name="app_name">OneDrive Saver</string>
+    <string name="main_welcomeText">OneDrive SDK Saver Sample</string>
     <string name="main_startSaverButton">Save a File</string>
     <string name="file_name_edit_text">MyFile.txt</string>
     <string name="file_name_label">File Name:</string>

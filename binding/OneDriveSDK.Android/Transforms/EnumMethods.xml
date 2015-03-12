@@ -15,4 +15,21 @@
   - To change the type of the return value, use "return" as the parameter name.
   - The parameter names will be p0, p1, ... unless you provide JavaDoc file in the project.
   -->
+
+  <mapping jni-class="com/microsoft/onedrivesdk/picker/Picker">
+    <method jni-name="getPickerResult" parameter="p1" clr-enum-type="Android.App.Result" />
+  </mapping>
+
+  <mapping jni-interface="com/microsoft/onedrivesdk/picker/IPicker">
+    <method jni-name="getPickerResult" parameter="p1" clr-enum-type="Android.App.Result" />
+  </mapping>
+  
+  <mapping jni-class="com/microsoft/onedrivesdk/saver/Saver">
+    <method jni-name="handleSave" parameter="p1" clr-enum-type="Android.App.Result" />
+  </mapping>
+
+  <mapping jni-interface="com/microsoft/onedrivesdk/saver/ISaver">
+    <method jni-name="handleSave" parameter="p1" clr-enum-type="Android.App.Result" />
+  </mapping>
+
 </enum-method-mappings>

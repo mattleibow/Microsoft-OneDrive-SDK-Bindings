@@ -2,4 +2,5 @@
 <resources>
     <dimen name="main_majorSpacer">16dp</dimen>
     <dimen name="main_minorSpacer">8dp</dimen>
+    <dimen name="main_marginSides">16dp</dimen>
 </resources>

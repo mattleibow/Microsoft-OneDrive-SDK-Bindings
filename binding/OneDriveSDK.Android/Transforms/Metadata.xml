@@ -8,6 +8,7 @@
   -->
 
   <attr path="/api/package[@name='com.microsoft.onedrivesdk']" name="managedName">Microsoft.OneDrive</attr>
+  <attr path="/api/package[@name='com.microsoft.onedrivesdk.common']" name="managedName">Microsoft.OneDrive.Common</attr>
   <attr path="/api/package[@name='com.microsoft.onedrivesdk.picker']" name="managedName">Microsoft.OneDrive.Pickers</attr>
   <attr path="/api/package[@name='com.microsoft.onedrivesdk.saver']" name="managedName">Microsoft.OneDrive.Savers</attr>
 
