@@ -24,7 +24,7 @@ namespace OneDriveSDKSaverSampleAndroid
 		private const int DefaultFileSizeKb = 100;
 
 		/// Registered Application id for OneDrive {<seealso cref="http://go.microsoft.com/fwlink/p/?LinkId=193157" />}.
-		private const string OneDriveAppId = "48122D4E";
+		private const string OneDriveAppId = "insert OneDrive App ID here";
 
 		/// <summary>
 		/// The OneDrive saver instance used by this activity

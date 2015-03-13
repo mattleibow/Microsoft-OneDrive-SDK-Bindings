@@ -21,11 +21,8 @@ namespace OneDriveSDKPickerSampleAndroid
 	[Activity (Label = "@string/app_name", MainLauncher = true, Icon = "@drawable/ic_launcher")]
 	public class MainActivity : Activity
 	{
-		/// <summary>
-		/// Registered Application id for OneDrive {@link http
-		/// ://go.microsoft.com/fwlink/p/?LinkId=193157}
-		/// </summary>
-		private const string OneDriveAppId = "48122D4E";
+		/// Registered Application id for OneDrive {<seealso cref="http://go.microsoft.com/fwlink/p/?LinkId=193157" />}.
+		private const string OneDriveAppId = "insert OnedDrive App ID here";
 
 		/// <summary>
 		/// The OneDrive picker instance used by this activity
@@ -88,8 +85,9 @@ namespace OneDriveSDKPickerSampleAndroid
 				UpdateResultTable (result);
 			} else {
 				Toast.MakeText (this, "Did not get a file from the picker!", ToastLength.Long).Show ();
-				return;
 			}
+
+			base.OnActivityResult (requestCode, resultCode, data);
 		}
 
 		/// <summary>
