@@ -1,6 +1,9 @@
+
+[![Build status][img]][link]
+
 The picker is the easiset way to browse, select, open and save OneDrive files an Android app with OneDrive.
 
-![Preview of the OneDrive Picker in Action](https://github.com/mattleibow/Microsoft-Live-SDK-Bindings/raw/master/component/images/android-picker-saver.png)
+![Preview of the OneDrive Picker in Action](https://github.com/mattleibow/Microsoft-Live-SDK-Bindings/raw/master/images/android-picker-saver.png)
 
 ## Requirements
 
@@ -131,4 +134,5 @@ public enum SaverError {
 }
 ```
 
-
+[img]: https://ci.appveyor.com/api/projects/status/7t4j8ac2b68m36hn/branch/master?svg=true
+[link]: https://ci.appveyor.com/project/mattleibow/microsoft-onedrive-sdk-bindings/branch/master
