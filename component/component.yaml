@@ -1,0 +1,30 @@
+id: onedrivepicker
+version: 2.0.0
+name: OneDrive Picker for Android
+summary: SDK to easily access files from OneDrive within your Android application.
+publisher: Xamarin Inc
+
+publisher-url: http://dotnetdevaddict.co.za/projects/onedrive-picker-for-android
+src-url: https://github.com/mattleibow/Microsoft-OneDrive-SDK-Bindings
+
+license: License.md
+details: Details.md
+getting-started: Details.md
+
+icons: 
+  - ../icons/onedrivepicker_128x128.png
+  - ../icons/onedrivepicker_512x512.png
+
+is_shell: true
+no_build: true
+libraries:
+  android: ../output/OneDriveSDK.Android.dll
+local-nuget-repo: ../output/
+packages:
+  android: OneDrivePicker, Version=2.0.0
+
+samples:
+  - name: "OneDrive Picker for Android Sample"
+    path: ../samples/OneDriveSDKPickerSampleAndroid/OneDriveSDKPickerSampleAndroid.sln
+  - name: "OneDrive Saver for Android Sample"
+    path: ../samples/OneDriveSDKSaverSampleAndroid/OneDriveSDKSaverSampleAndroid.sln

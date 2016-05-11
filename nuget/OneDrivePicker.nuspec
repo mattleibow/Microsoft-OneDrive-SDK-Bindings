@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+    <metadata>
+        <id>OneDrivePicker</id>
+        <version>2.0.0</version>
+        <title>OneDrive Picker for Android</title>
+        <authors>Xamarin Inc.</authors>
+        <licenseUrl>https://components.xamarin.com/license/onedrivepicker</licenseUrl>
+        <projectUrl>https://github.com/mattleibow/Microsoft-OneDrive-SDK-Bindings</projectUrl>
+        <iconUrl>https://cdn.rawgit.com/mattleibow/Microsoft-OneDrive-SDK-Bindings/v2.0.0/icons/onedrivepicker_512x512.png</iconUrl>
+        <requireLicenseAcceptance>false</requireLicenseAcceptance>
+        <description>SDK to easily access files from OneDrive within your Android application.</description>
+        <copyright>Microsoft and Xamarin Inc.</copyright>
+        <tags>Microsoft,OneDrive,Storage,File Picker,Xamarin,Android,monodroid,monoandroid</tags>
+    </metadata>
+    <files>
+        <file src="component/Details.md" target="Readme.md" />
+        <file src="component/License.md" target="License.md" />
+		
+        <file src="output/OneDriveSDK.Android.dll" target="lib\MonoAndroid\OneDriveSDK.Android.dll" />
+    </files>
+</package>
